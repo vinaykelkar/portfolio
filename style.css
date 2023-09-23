@@ -92,8 +92,10 @@ nav ul li a:hover::after{
 }
 
 .slides.slowFade img{
-    width: 600px;
+    max-width: 100%;
     margin:100px 0px;
+    height: auto;
+    width: auto;
 }
 
 /* About section css below */
