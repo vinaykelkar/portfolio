@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+               <img src="images/vk_logo.png" class="logo"> 
+               <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="header-text">
+                <p>Application Support Lead and SME</p>
+                <h1>Hi, I'm <span>Vinay</span> Kelkar</h1>
+            </div>
+            <div class="header-row">
+                <div class="lottie-file">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://lottie.host/e3061dd8-52bf-4299-9d5b-c7ecf0a2e7e8/AXf2a6CAri.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                    <button>Download CV</button>
+                </div>
+                <div class="slides slowFade">
+                    <div class="slide">
+                        <img src="images/Python_certi.png" alt="img">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Tableau_certi.png" alt="img">
+                    </div>
+                    <div class="slide">
+                        <img src="images/tieto_appreciation_1.png" alt="img">
+                    </div>
+                    <div class="slide">
+                        <img src="images/tieto_appreciation_2.png" alt="img">
+                    </div>
+                    <div class="slide">
+                        <img src="images/SL_appreciation_1.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--- About section --->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/vinay2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>A highly analytical and detail-oriented application support lead with excellenet ability to manage client expectations
+                        and a passion for developing innovative solutions.Possessing a strong understanding of RDBMS concepts and a proficency
+                        in Python, I am eager to take on new challenges and contribute to the success of a progressive company.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('workex')">Work Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('future')">Future Learnings</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Flask app development and automations </li>
+                            <li><span>SQL/PLSQL</span><br>Developing complex scripts for faster retrieval of data</li>
+                            <li><span>Linux</span><br>Working on Shell scripts and practical hands on commands during Production outage</li>
+                            <li><span>Tableau</span><br>Analyzing incidents,tickets for critical insights </li>
+                            <li><span>Improving MTTR</span><br>Performing war games by reproducing Production issues in lower instance</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="workex">
+                        <ul>
+                            <li><span>Apr 2021 - Present</span><br>Morgan Stanley, Mumbai</li>
+                            <li><span>Feb 2019 - Apr 2021</span><br>Tieto Every, Pune</li>
+                            <li><span>Jan 2017 - Feb 2019</span><br>Simple Logic, Mumbai</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2011 - May 2015</span><br>B.E Information Technology, University of Mumbai, Score - 65%</li>
+                            <li><span>HSC 2011</span><br>Maharashtra State board, Score - 82%</li>
+                            <li><span>SSC 2009</span><br>Maharashtra State board, Score - 90%</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="future">
+                        <ul>
+                            <li><span>DSA</span><br>Learning data structure and algorithms</li>
+                            <li><span>HTML,CSS,JavaScript</span><br>Developing neat blogs</li>
+                            <li><span>NodeJS</span><br>Learning one JS framework</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="portfolio.js"> </script>
+</body>
+</html>
