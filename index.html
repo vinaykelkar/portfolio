@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/999bcaf4d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -24,10 +25,10 @@
                 <h1>Hi, I'm <span>Vinay</span> Kelkar</h1>
             </div>
             <div class="header-row">
-                <div class="lottie-file">
+                <div class="lottie-file">                    
                     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
                     <dotlottie-player src="https://lottie.host/e3061dd8-52bf-4299-9d5b-c7ecf0a2e7e8/AXf2a6CAri.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-                    <button>Download CV</button>
+                    <a href="images/Vinay Kelkar Application Support Lead.pdf" download><button>Download CV</button></a>
                 </div>
                 <div class="slides slowFade">
                     <div class="slide">
@@ -59,7 +60,7 @@
                     <img src="images/vinay2.png">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p>A highly analytical and detail-oriented application support lead with excellenet ability to manage client expectations
                         and a passion for developing innovative solutions.Possessing a strong understanding of RDBMS concepts and a proficency
                         in Python, I am eager to take on new challenges and contribute to the success of a progressive company.
@@ -110,7 +111,81 @@
         </div>
     </div>
 
+<!--- Services section --->
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Scripting</h2>
+                    <p> Automate boring stuff using Python </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL/PLSQL</h2>
+                    <p> Complex RDBMS queries made easy </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-linux"></i>
+                    <h2>Linux</h2>
+                    <p> Easy go to cheatsheet for Linux Prod support </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h2>Grafana</h2>
+                    <p> Create Grafana dashboards for System, Server and database insights </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Tableau</h2>
+                    <p> Develop easy to use visualizations for trend analysis </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script src="portfolio.js"> </script>
+<!--- Contact Me section --->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vinaykelkar@hotmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>9028491184</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vinay-kelkar/"  target="_blank">
+                            <i class="fa-brands fa-linkedin"></i> 
+                        </a>
+                    </div>    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--- Copyright Section --->
+    <div id="copyright">
+        <div class="container">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> by Vinay Kelkar</p>
+        </div>
+    </div>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
