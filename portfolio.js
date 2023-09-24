@@ -1,6 +1,8 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 let imageindex = 0;
+let slidemenu = document.getElementById("side-menu");
+
 slider();
 
 function openTab(tabname){
@@ -29,4 +31,12 @@ function slider(){
     }
     img[imageindex-1].style.display = "block";
     setTimeout(slider, 3000);
+}
+
+function openMenu(){
+    slidemenu.style.right = "0";
+}
+
+function closeMenu(){
+    slidemenu.style.right = "-200px";
 }
