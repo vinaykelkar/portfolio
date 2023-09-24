@@ -169,10 +169,10 @@
                     </div>    
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <form onsubmit="emailSend(); reset(); return false;">
+                        <input type="text" id="name1" name="name" placeholder="Your name" required>
+                        <input type="email" id="email1" name="email" placeholder="Your email" required>
+                        <textarea id="message1" name="Message" rows="6" placeholder="Your message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
 
@@ -188,6 +188,7 @@
         </div>
     </div>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="portfolio.js"></script>
 </body>
 </html>

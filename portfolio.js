@@ -2,6 +2,9 @@ let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 let imageindex = 0;
 let slidemenu = document.getElementById("side-menu");
+let fname = document.getElementById("name1").value;
+let email = document.getElementById("email1").value;
+let message = document.getElementById("message1").value;
 
 slider();
 
@@ -40,3 +43,20 @@ function openMenu(){
 function closeMenu(){
     slidemenu.style.right = "-200px";
 }
+
+/*
+function emailSend(){
+    let messagebody = "Name " + fname + "<br/>" + "Email " + email + "<br/>" + "Message " + message; 
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "dsvinaykelkar@gmail.com",
+        Password : "4E80BDE82FDF3D5C9B478E57D7BDE2E0A631",
+        To : 'vinaykeshavkelkar@gmail.com',
+        From : "dsvinaykelkar@gmail.com",
+        Subject : "Email from Portfolio website ",
+        Body : messagebody
+    }).then(
+      message => alert(message)
+    );
+}
+*/
